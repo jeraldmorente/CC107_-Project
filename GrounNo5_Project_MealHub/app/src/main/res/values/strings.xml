@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MealHub</string>
+    <string name="title_activity_mhdashboard">MHDashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="profile">Profile</string>
+    <string name="dashboard">Welcome to MealHub</string>
+    <string name="timeline">Timeline</string>
+    <string name="uprofile">Update Profile</string>
+    <string name="register">Join to MealHub</string>
+    <string name="share_page">Share your Meal</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="title_listitems">Meal Name</string>
+    <string name="description">Meal Description</string>
+    <string name="about">This system provides reliable content for those people who are out of choices when it comes to their daily meal. \nMeal Hub displays shared daily meals of all users based on their current time and sorted by the latest shared.
+       </string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="more">More</string>
+    <string name="share">Share</string>
+</resources>

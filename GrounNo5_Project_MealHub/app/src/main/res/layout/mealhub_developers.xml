@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MHDevelopers">
+
+    <RelativeLayout
+        android:id="@+id/layer01"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/background_layout">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/prototype"
+            android:text="DEVELOPERS"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/layer01">
+
+    <RelativeLayout
+        android:id="@+id/layer02"
+        android:layout_below="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="50dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/picture01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="22dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/dev01"
+            app:civ_border_color="@color/orangered"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewdev01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/picture01"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/picture01"
+        android:layout_toRightOf="@+id/picture01"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Genevieve D. Bata-anon"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <ImageView
+            android:id="@+id/em1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewdev01"
+            android:layout_alignStart="@+id/textviewdev01"
+            android:layout_alignLeft="@+id/textviewdev01"
+            app:srcCompat="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/textviewdev02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/em1"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/em1"
+            android:layout_toRightOf="@+id/em1"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="genebata19@gmail.com"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+        android:layout_below="@+id/picture01"
+        android:layout_alignStart="@+id/picture01"
+        android:layout_alignLeft="@+id/picture01"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/dev02"
+        app:civ_border_color="@color/orangered"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewdev03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/picture02"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/picture01"
+        android:layout_toRightOf="@+id/picture01"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Bernie F. Esteroza Jr."
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <ImageView
+            android:id="@+id/em2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewdev03"
+            android:layout_alignStart="@+id/textviewdev01"
+            android:layout_alignLeft="@+id/textviewdev01"
+            app:srcCompat="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/textviewdev04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/em2"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/em2"
+            android:layout_toRightOf="@+id/em2"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="berniemonkey28@gmail.com"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture03"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+        android:layout_below="@+id/picture02"
+        android:layout_alignStart="@+id/picture02"
+        android:layout_alignLeft="@+id/picture02"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/dev03"
+        app:civ_border_color="@color/orangered"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewdev05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/picture03"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/picture03"
+        android:layout_toRightOf="@+id/picture03"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Jayson D. Laumoc"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <ImageView
+            android:id="@+id/em3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewdev05"
+            android:layout_alignStart="@+id/textviewdev05"
+            android:layout_alignLeft="@+id/textviewdev05"
+            app:srcCompat="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/textviewdev06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/em3"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/em3"
+            android:layout_toRightOf="@+id/em3"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="jayson.laumoc@gmail.com"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture04"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+        android:layout_below="@+id/picture03"
+        android:layout_alignStart="@+id/picture03"
+        android:layout_alignLeft="@+id/picture03"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/dev04"
+        app:civ_border_color="@color/orangered"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewdev07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/picture04"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/picture01"
+        android:layout_toRightOf="@+id/picture01"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Jocelyn F. Mercado"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <ImageView
+            android:id="@+id/em4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewdev07"
+            android:layout_alignStart="@+id/textviewdev07"
+            android:layout_alignLeft="@+id/textviewdev07"
+            app:srcCompat="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/textviewdev08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/em4"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/em4"
+            android:layout_toRightOf="@+id/em4"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="mercadojo0921@gmail.com"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/picture05"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/picture04"
+            android:layout_alignStart="@+id/picture04"
+            android:layout_alignLeft="@+id/picture04"
+            android:layout_marginTop="20dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/dev05"
+            app:civ_border_color="@color/orangered"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textviewdev09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/picture05"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/picture01"
+        android:layout_toRightOf="@+id/picture01"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Jerald M. Morente"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <ImageView
+            android:id="@+id/em5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewdev09"
+            android:layout_alignStart="@+id/textviewdev09"
+            android:layout_alignLeft="@+id/textviewdev09"
+            app:srcCompat="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/textviewdev10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/em5"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/em5"
+            android:layout_toRightOf="@+id/em5"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="tauzuriouzx@gmail.com"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

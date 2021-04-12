@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+    <item android:id="@+id/nav_sharemeal" android:icon="@drawable/ic_meal" android:title="Share a Meal"/>
+    <item android:id="@+id/nav_favorites" android:icon="@drawable/ic_fav_on" android:title="Favorites"/>
+    <item android:id="@+id/nav_timeline" android:icon="@drawable/ic_timeline" android:title="Timeline"/>
+    <item android:id="@+id/nav_logout" android:icon="@drawable/ic_logout" android:title="Logout"/>
+    </group>
+    <item android:id="@+id/nav_dev" android:icon="@drawable/ic_dev" android:title="Contact Us"/>
+    <item android:id="@+id/nav_about" android:icon="@drawable/ic_info" android:title="About"/>
+
+</menu>

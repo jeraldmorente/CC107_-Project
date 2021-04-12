@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cc107.mealhub">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mealhub_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mealhub_logo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MHDevelopers"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".MHAbout" />
+        <activity
+            android:name=".MHSplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MHRatings"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MHMealView"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MHFavorite"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MHTimeline"
+            android:label="@string/timeline"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MHShare"
+            android:label="@string/share_page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MHProfileUpdate"
+            android:label="@string/uprofile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MHProfile"
+            android:label="@string/profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MHDashboard"
+            android:label="Welcome to MealHub"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MHRegistration"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MHLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MHMealUpdate"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

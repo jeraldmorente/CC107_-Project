@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="50dp"
+    tools:context=".MHRatings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rate_mealimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:foregroundGravity="center"
+            android:src="@drawable/no_image"
+            app:civ_border_color="@color/tomato"
+            app:civ_border_width="3dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rate_userphoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="65dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/no_image"
+            app:civ_border_color="@color/tomato"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/rate_mealname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rate_mealimage"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="120dp"
+            android:maxLines="2"
+            android:layout_toEndOf="@+id/rate_mealimage"
+            android:layout_toRightOf="@+id/rate_mealimage"
+            android:text="Meal Name as Meal a Name Meal Name Meal Name Meal Name Meal Name Meal Name Meal Name "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rate_mealUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rate_mealname"
+            android:layout_alignStart="@+id/rate_mealname"
+            android:layout_alignLeft="@+id/rate_mealname"
+            android:layout_marginTop="5dp"
+            android:text="by: User Fullname" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rate_userphoto"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/totalRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="0.0"
+                android:textColor="@color/orangered"
+                android:textSize="40dp" />
+
+            <RatingBar
+                android:id="@+id/totalRate_bar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="0.1"
+                android:progressTint="@color/orangered"
+                android:layout_alignTop="@+id/totalRate"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/totalRate"
+                android:layout_toRightOf="@+id/totalRate" />
+
+            <TextView
+                android:id="@+id/rater"
+                android:textColor="@color/orangered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalRate_bar"
+                android:layout_alignStart="@+id/totalRate_bar"
+                android:layout_alignLeft="@+id/totalRate_bar"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="0 ratings" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textnum5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/textnum4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textnum5"
+                android:layout_alignStart="@+id/textnum5"
+                android:layout_alignLeft="@+id/textnum5"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/textnum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textnum4"
+                android:layout_alignStart="@+id/textnum4"
+                android:layout_alignLeft="@+id/textnum4"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/textnum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textnum3"
+                android:layout_alignStart="@+id/textnum3"
+                android:layout_alignLeft="@+id/textnum3"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/textnum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textnum2"
+                android:layout_alignStart="@+id/textnum2"
+                android:layout_alignLeft="@+id/textnum2"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="1" />
+
+            <ProgressBar
+                android:id="@+id/ratebar5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textnum5"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/textnum5"
+                android:layout_toRightOf="@+id/textnum5"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/green"/>
+
+            <ProgressBar
+                android:id="@+id/ratebar4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ratebar5"
+                android:layout_alignLeft="@+id/ratebar5"
+                android:layout_alignTop="@+id/textnum4"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/lime" />
+
+            <ProgressBar
+                android:id="@+id/ratebar3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ratebar4"
+                android:layout_alignLeft="@+id/ratebar4"
+                android:layout_alignTop="@+id/textnum3"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/yellow" />
+
+            <ProgressBar
+                android:id="@+id/ratebar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ratebar3"
+                android:layout_alignLeft="@+id/ratebar3"
+                android:layout_alignTop="@+id/textnum2"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/darkorange" />
+
+            <ProgressBar
+                android:id="@+id/ratebar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ratebar2"
+                android:layout_alignLeft="@+id/ratebar2"
+                android:layout_alignTop="@+id/textnum1"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/red" />
+
+            <TextView
+                android:id="@+id/total_num5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ratebar5"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-1dp"
+                android:layout_toEndOf="@+id/ratebar5"
+                android:layout_toRightOf="@+id/ratebar5"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/total_num4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/total_num5"
+                android:layout_alignLeft="@+id/total_num5"
+                android:layout_alignTop="@+id/ratebar4"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/total_num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/total_num4"
+                android:layout_alignLeft="@+id/total_num4"
+                android:layout_alignTop="@+id/ratebar3"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="0" />
+
+            <TextView
+            android:id="@+id/total_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/total_num3"
+            android:layout_alignLeft="@+id/total_num3"
+            android:layout_alignTop="@+id/ratebar2"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="0" />
+
+            <TextView
+                android:id="@+id/total_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/total_num2"
+                android:layout_alignLeft="@+id/total_num2"
+                android:layout_alignTop="@+id/ratebar1"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/total_rater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_num1"
+                android:layout_alignEnd="@+id/total_num1"
+                android:layout_alignRight="@+id/total_num1"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/total_rater2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/total_rater"
+                android:layout_marginTop="-1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/total_rater"
+                android:layout_toLeftOf="@+id/total_rater"
+                android:fontFamily="@font/poppinsmedium"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="TOTAL" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textwrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:textColor="@color/orangered"
+        android:text="WRITE REVIEW"
+        app:layout_constraintStart_toStartOf="@+id/mv_commentbox"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <EditText
+        android:id="@+id/review_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundedtextview"
+        android:fontFamily="@font/poppinsmedium"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="1"
+        android:maxLines="20"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="7dp"
+        android:scrollbars="vertical" />
+
+        <RatingBar
+            android:id="@+id/meal_ratebar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:secondaryProgressTint="@color/lightorange"
+            android:progressTint="@color/yellow"
+            android:stepSize="1"
+            app:layout_constraintTop_toBottomOf="@+id/mv_commentbox" />
+
+        <Button
+            android:id="@+id/button_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundedbutton"
+            android:text="RATE"
+            android:textColor="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:id="@+id/rate_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/button_rate"
+            android:background="@android:color/white"
+            tools:listitem="@layout/list_rater">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
